@@ -1,0 +1,11 @@
+body {
+    background-color: white;
+}
+
+.news-index, .order-index, .country-index, .tour-index, .type-tour-index, .user-profile-index {
+    width: 1000px;
+    background-color: white;
+    padding: 20px;
+    margin: 0 auto 0 auto;
+
+}

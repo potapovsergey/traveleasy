@@ -1,0 +1,39 @@
+.navbar{
+    float: none;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.nav li {
+    float: none;
+    display: inline-block;
+    font-size: 25px;
+
+}
+.nav {
+
+}
+#navbar .navbar-inner {
+     font-size: 14px;
+     background-color: rgba(248, 248, 248, 0);
+     /*border-width: 1px;*/
+      border-radius: 4px;
+ }
+.navbar-inner {
+    background: transparent;
+}
+.btn-country {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    color: #337ab7;
+}
+
+li {
+    list-style-type: none;
+}
+.navbar_profile {
+    font-size: 15px;
+
+}

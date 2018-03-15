@@ -1,0 +1,36 @@
+.chevron_display_up{
+    /*position: fixed;*/
+    /*margin: 520px 115px 0;*/
+    display: none;
+    /*z-index: 50;*/
+}
+
+.chevron_display_up:hover{
+    color: rgb(250, 244, 255);
+}
+
+.chevron_display_down{
+    /*position: fixed;*/
+    /*margin: 520px 115px 0;*/
+    display: none;
+    /*z-index: 50;*/
+}
+.chevron_display_down:hover{
+    color: rgba(3, 33, 204, 0.7);
+}
+.block_chevron{
+    position: fixed;
+    float: right;
+    width: 50px;
+    height: 50px;
+    margin: 10px -200px 0;
+
+}
+
+.search_head_text{
+    font-size: 50px;
+    /*font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;*/
+    font-family: AvantGarde, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}

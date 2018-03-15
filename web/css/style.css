@@ -1,0 +1,223 @@
+body {
+    font-family: Calibri,"Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black;
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+}
+
+.main_phone::before{
+    background-image: url(../image/icons/call_icon.png);
+}
+.kyivstar_phone::before{
+    background-image: url(../image/icons/kyivstar_icon.png);
+}
+.vodafone_phone::before{
+    background-image: url(../image/icons/vodafone_icon.png);
+}
+
+.vodafone_phone::before , .kyivstar_phone::before , .main_phone::before{
+    width: 24px;
+    height: 24px;
+    content: '';
+    display: inline-block;
+    background-repeat: no-repeat;
+    margin-bottom: -7px;
+    margin-left:  7px;
+}
+.phones{
+    padding: 10px;
+    text-align: center;
+
+}
+
+.logo{
+    padding: 15px;
+    text-align: center;
+}
+.logo a {
+    display: block;
+    background-image: url(../image/logo.png);
+    width:300px;
+    height: 145px;
+}
+
+.side_menu{
+    list-style-type: none;
+    font-size: 20px ;
+    text-align: center;
+    padding: 0;
+}
+.side_menu a{
+    text-decoration: none;
+}
+.side_menu li{
+    padding: 10px 15px;
+    word-wrap: break-word;
+}
+.side_menu li:hover{
+    background: white;
+    color:black;
+}
+.main-content {
+    background: rgba(255,255,255,1);
+    padding: 20px;
+
+    height: auto;
+}
+
+.footer {
+    height: 60px;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    bottom: 0;
+    width: 100%;
+}
+.slider {
+    margin: auto ;
+    width: 100% ;
+    height: 430px;
+}
+
+.news_title {
+    font-size: 30px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #000;
+}
+.news_image {
+    margin: 5px 5px 5px 5px;
+    padding: 10px;
+    float:left;
+    border:1px solid darkgray;
+}
+.news-description {
+    text-align: justify;
+    padding: 10px;
+}
+.tour_image {
+    margin: 5px 5px 5px 5px;
+    padding: 10px;
+    float:left;
+    border:1px solid darkgray;
+}
+.tour_title {
+    text-align: left;
+}
+.tour_description {
+    text-align: justify;
+}
+.struct_tour li {
+    list-style-type: none;
+    font-size: 20px;
+}
+.struct_tour {
+    padding: 0;
+    margin: 0;
+
+}
+.btn-order  {
+    text-align: center;
+}
+.tour_order {
+    text-align: center;
+}
+.data_user {
+    text-align: left;
+}
+.image_location {
+    float:left;
+
+}
+.location_image {
+    width:200px;
+    height: 200px;
+}
+#header_contacts {
+    text-align: center;
+}
+#phones {
+    text-align: center;
+}
+.about {
+    text-align: justify;
+    font-size: 16px;
+    padding: 20px;
+    font-family: "Bodoni MT";
+}
+.about li {
+    list-style-type: circle;
+}
+#text_cor{
+    list-style-type: square;
+}
+.tour_type{
+    margin-bottom: 20px;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.admin-default-index  {
+    background-color: white;
+    height: 550px;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+.tour_description_view{
+    padding: 15px;
+    padding-left: 5px;
+    text-align: justify;
+}
+.data_user, .text_header, #order_styles {
+    text-align: center;
+}
+.tour-all, .news-description {
+    font-family: Colonas,Arialm fantasy;
+    font-size: 20px;
+}
+.tour:hover{
+    background-color: rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.img_loc{
+    padding: 90px;
+}
+.btn-search {
+    position: fixed;
+    margin: 0 -120px 0;
+    background-color: white;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+
+    box-shadow: 0 3px 20px rgba(0,0,0,.25),
+    inset 0 2px 0 rgba(255,255,255,.6),
+    0 2px 0 rgba(0,0,0,.1),
+    inset 0 0 20px rgba(0,0,0,.1);
+}
+.btn-search:hover {
+    background-color: greenyellow;
+    box-shadow: 0 3px 20px rgba(0,0,0,.25),
+    inset 0 2px 0 rgba(255,255,255,.6),
+    0 2px 0 rgba(0,0,0,.1),
+    inset 0 0 20px rgba(0,0,0,.1);
+}
+.btn-search_a{
+    width: 50px;
+    height: 50px;
+}
