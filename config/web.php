@@ -6,6 +6,26 @@ $config = [
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
+    'layout'=>'travel_easy',
+    'defaultRoute'=>'main/index',
+    'language'=>'ru_RU',
+    'modules' => [
+        'admin' => [
+            'class' => 'app\modules\admin\Module',
+            'layout'=> 'admin_layout'
+        ],
+        'yii2images' => [
+            'class' => 'rico\yii2images\Module',
+            //be sure, that permissions ok
+            //if you cant avoid permission errors you have to create "images" folder in web root manually and set 777 permissions
+            'imagesStorePath' => 'image/store', //path to origin images
+            'imagesCachePath' => 'image/cache', //path to resized copies
+            'graphicsLibrary' => 'GD', //but really its better to use 'Imagick'
+            'placeHolderPath' => '@webroot/image/placeHolder.png', // if you want to get placeholder when image not exists, string will be processed by Yii::getAlias
+
+        ],
+    ],
+
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
@@ -17,6 +37,9 @@ $config = [
         'user' => [
             'identityClass' => 'app\models\User',
             'enableAutoLogin' => true,
+        ],
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager',
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
@@ -41,8 +64,44 @@ $config = [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            'enableStrictParsing' => true,
             'rules' => [
-            ],
+                [
+                    'pattern' => '',
+                    'route' => 'main/index',
+                    'suffix' => ''
+                ],
+                [
+                    'pattern' => 'найти-<search:\w*>-<year:\d{4}>',
+                    'route' => 'main/search',
+                    'suffix' => ''
+                ],
+                [
+                    'pattern' => 'найти-<search:\w*>',
+                    'route' => 'main/search',
+                    'suffix' => ''
+                ],
+                [
+                    'pattern' => '<controller>/<action>/<id:\d+>',
+                    'route' => '<controller>/<action>',
+                    'suffix' => ''
+                ],
+                [
+                    'pattern' => '<controller>/<action>',
+                    'route' => '<controller>/<action>',
+                    'suffix' => ''
+                ],
+                [
+                    'pattern' => '<module>/<controller>/<action>/<id:\d+>',
+                    'route' => '<module>/<controller>/<action>',
+                    'suffix' => ''
+                ],
+                [
+                    'pattern' => '<module>/<controller>/<action>',
+                    'route' => '<module>/<controller>/<action>',
+                    'suffix' => ''
+                ]
+            ]
         ],
     ],
     'params' => $params,
