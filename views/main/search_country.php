@@ -13,7 +13,7 @@ $type_id = TypeTour::findOne($tour->type_id);
     <div class="row">
         <div class="col-md-3">
             <div class="tour_image">
-                <?
+                <?php
                 $image = $tour->getImage($tour->id);
                 ?>
                 <img src="<?= $image->getUrl('175x175'); ?>" alt="">
@@ -47,7 +47,7 @@ $type_id = TypeTour::findOne($tour->type_id);
         <div class="col-md-1">
             <li>
                 <div class="tour_type">
-                    <?
+                    <?php
                     $image = $type_id->getImage($tour->type_id);
                     ?>
                     <img src="<?= $image->getUrl('40x40'); ?>" alt="">
@@ -55,7 +55,7 @@ $type_id = TypeTour::findOne($tour->type_id);
             </li>
             <li>
                 <div class="tour_country">
-                    <?
+                    <?php
                     $image = $model->getImage($tour->country_id);
                     ?>
                     <img src="<?= $image->getUrl('45x25'); ?>" alt="">

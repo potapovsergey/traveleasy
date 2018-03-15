@@ -12,7 +12,7 @@ $country = Country::findOne($model->country_id);
     <div class="row">
         <div class="col-md-4">
             <div class="tour_image">
-                <?
+                <?php
                 $image = $model->getImage($model->id);
                 ?>
                 <img src="<?= $image->getUrl('300x200'); ?>" alt="">
@@ -31,7 +31,7 @@ $country = Country::findOne($model->country_id);
         <div class="col-md-1">
             <li>
                 <div class="tour_type">
-                    <?
+                    <?php
                     $image = $type_id->getImage($model->type_id);
                     ?>
                     <img src="<?= $image->getUrl('40x40'); ?>" alt="">
@@ -39,7 +39,7 @@ $country = Country::findOne($model->country_id);
             </li>
             <li>
                 <div class="tour_country">
-                    <?
+                    <?php
                     $image = $country->getImage($model->country_id);
                     ?>
                     <img src="<?= $image->getUrl('45x25'); ?>" alt="">
